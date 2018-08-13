@@ -1,0 +1,28 @@
+=bang($maunen:#F00,$cao:50px)
+    background: $maunen 
+    min-height: $cao
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+=tieude2()
+     text-transform: uppercase
+        position: relative
+        margin-bottom: 1rem
+        color: white
+
+        &:before,&:after
+            content: ''
+            display: block
+            background: black
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 68px
+            height: 3px
+            bottom: -8px
+        &:after
+            width: 10px
+            height: 10px
+            bottom: -12px

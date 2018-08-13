@@ -4,9 +4,9 @@ block main
 		.container
 			.row
 				.col
-					h1 Đây là thẻ H1
+					h1 Hi there! We are the new kids on the block and we buil awesome websites and mobile apps.
 					p
-						a.btn.btn-more(href="#") Lien ket
+						a.btn.btn-more(href="#") work with us!
 	
 		
 	section.home_service
@@ -14,52 +14,134 @@ block main
 			.row
 				.col
 					h2 Service we provice
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p We are working with both individuals and businesses from all over the globe to create awesome websites and appications.
 			.row
-				.col-sm-6.col-md-3
-					img(src="./img/home_icon_1.png", alt="")
-					h3 tiêu đề h3
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-				.col-sm-6.col-md-3
-					img(src="./img/home_icon_2.png", alt="")
-					h3 tiêu đề h3
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-				.col-sm-6.col-md-3
-					img(src="./img/home_icon_3.png", alt="")
-					h3 tiêu đề h3
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-				.col-sm-6.col-md-3
-					img(src="./img/home_icon_4.png", alt="")
-					h3 tiêu đề h3
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+				//-loop in service
+				-for(x=1; x<5; x++)
+					.col-sm-6.col-md-3
+						img(src="./img/home_icon_"+x+".png", alt="")
+						-if(x==1)
+							h3 Brand
+							p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+						-else if(x==2)
+							h3 design
+							p Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						-else if(x==3)
+							h3 Development
+							p At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
+						-else
+							h3 ROCKET SCIENCE
+							p Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
+				
+				
 	section.home_team
 		.container
 			.row
 				.col
 					h2 meet our beatifull team
+					p We are small team of design and developers, who help brands with big ideas.
+			.row
+				//- loop in team
+				
+				-for(x=1; x<5; x++)
+					.col-sm-6.col-md-3
+						img(src="./img/home_team_0"+x+".png", alt="")
+						
+						-if(x==1)
+							h3 anne hathaway
+							span CEO/marketing Guru
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+							ul
+								li
+									a(href="#") 
+										i.fa.fa-facebook-f
+										
+								li
+									a(href="#") 
+										i.fa.fa-twitter
+								li
+									a(href="#") 
+										i.fa.fa-linkedin
+								li
+									a(href="#") 
+										i.fa.fa-envelope-o
+						-else if(x==2)
+							h3 kate upton
+							span Creative Director
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+						-else if(x==3)
+							h3 olivia wilde
+							span Lead Designer
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+						-else
+							h3 ashley greene
+							span SEO/Developer
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+
+					
+	
+	section.home_skill
+		.container
+			.row
+				.col
+					h2 We got skill
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 			.row
 				.col-sm-6.col-md-3
-					img(src="./img/home_team_01.png", alt="")
+					.c100.p50
+						span 50%
+						.slice
+							.bar
+							.fill
 					h3 tiêu đề h3
-					span CEO/marketing Guru
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-					.col
-						a(href="#") 
-							i.fab.fa-facebook-f
 				.col-sm-6.col-md-3
-					img(src="./img/home_team_02.png", alt="")
+					.c100.p50
+						span 50%
+						.slice
+							.bar
+							.fill
 					h3 tiêu đề h3
-					span CEO/marketing Guru
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
 				.col-sm-6.col-md-3
-					img(src="./img/home_team_03.png", alt="")
+					.c100.p50
+						span 50%
+						.slice
+							.bar
+							.fill
 					h3 tiêu đề h3
-					span CEO/marketing Guru
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
 				.col-sm-6.col-md-3
-					img(src="./img/home_team_04.png", alt="")
+					.c100.p50
+						span 50%
+						.slice
+							.bar
+							.fill
 					h3 tiêu đề h3
-					span CEO/marketing Guru
-					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-	
+	section.home_portfolio
+		.container
+			.row
+				.col
+					h2 our portfolio
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.row
+				//- loop in portfolio
+				-for(x=1; x<5; x++)
+					.col-sm-6.col-md-3
+						img(src="./img/home_portfolio_0"+x+".png", alt="")
+						-if(x==1)
+							h3 Isometric Perspective Mock-Up
+						-else if(x==2)
+							h3 Time Zone App UI
+						-else if(x==3)
+							h3 Viro Media Players UI
+						-else
+							h3 Blog / Magazine Flat UI Kit
+			.row
+				.col
+					p
+						a.btn.btn-more(href="#") load more project
+
+
+				
+				
+					
+					
+				
